@@ -1,0 +1,17 @@
+{
+  "name": "deepansh-singh-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio website for Deepansh Singh — Web Developer & Engineering Student",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "dev": "node server/server.js"
+  },
+  "keywords": ["portfolio", "web-developer", "deepansh-singh"],
+  "author": "Deepansh Singh",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.0"
+  }
+}
