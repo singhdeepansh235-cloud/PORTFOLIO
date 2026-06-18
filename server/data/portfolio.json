@@ -2,7 +2,12 @@
   "personal": {
     "name": "Deepansh Singh",
     "title": "Web Developer & Engineering Student",
-    "taglines": ["Web Developer", "React Native Developer", "Problem Solver", "Tech Enthusiast"],
+    "taglines": [
+      "Web Developer",
+      "React Native Developer",
+      "Problem Solver",
+      "Tech Enthusiast"
+    ],
     "bio": "I'm an engineering student with a deep passion for technology, software development, and building practical solutions. Skilled in web development, React Native, SQL, and problem solving — I bring ideas to life through clean code and intuitive design. With hands-on experience through projects like Sentinel Fuzz and Life Link, I'm constantly pushing boundaries and learning new technologies.",
     "location": "Bahraich, Uttar Pradesh",
     "relocate": "Willing to relocate to Lucknow, Uttar Pradesh",
@@ -11,37 +16,75 @@
   "stats": {
     "projects": 2,
     "skills": 10,
-    "certifications": 1
+    "certifications": 2
   },
   "skills": {
     "technical": [
-      { "name": "Web Development", "icon": "globe" },
-      { "name": "React Native", "icon": "smartphone" },
-      { "name": "SQL", "icon": "database" },
-      { "name": "Microsoft Office", "icon": "file-text" },
-      { "name": "Problem Solving", "icon": "lightbulb" }
+      {
+        "name": "Web Development",
+        "icon": "globe"
+      },
+      {
+        "name": "React Native",
+        "icon": "smartphone"
+      },
+      {
+        "name": "SQL",
+        "icon": "database"
+      },
+      {
+        "name": "Microsoft Office",
+        "icon": "file-text"
+      },
+      {
+        "name": "Problem Solving",
+        "icon": "lightbulb"
+      }
     ],
     "soft": [
-      { "name": "Leadership", "icon": "users" },
-      { "name": "Organisational Skills", "icon": "layout" },
-      { "name": "Communication", "icon": "message-circle" },
-      { "name": "Customer Service", "icon": "heart-handshake" },
-      { "name": "Administrative Experience", "icon": "briefcase" }
+      {
+        "name": "Leadership",
+        "icon": "users"
+      },
+      {
+        "name": "Organisational Skills",
+        "icon": "layout"
+      },
+      {
+        "name": "Communication",
+        "icon": "message-circle"
+      },
+      {
+        "name": "Customer Service",
+        "icon": "heart-handshake"
+      },
+      {
+        "name": "Administrative Experience",
+        "icon": "briefcase"
+      }
     ]
   },
   "projects": [
     {
       "title": "Sentinel Fuzz",
       "description": "An advanced security testing tool designed to identify vulnerabilities through intelligent fuzz testing. Built to automate the process of finding bugs and security flaws in web applications and APIs.",
-      "tags": ["Security", "Testing", "Web Development"],
-      "github": "https://github.com/singhdeepansh235-cloud",
+      "tags": [
+        "Security",
+        "Testing",
+        "Web Development"
+      ],
+      "github": "https://gaurd-nine.vercel.app",
       "featured": true
     },
     {
       "title": "Life Link",
       "description": "A life-saving application that connects people in need with emergency services and resources. Designed to bridge the gap between individuals and critical support systems with real-time connectivity.",
-      "tags": ["React Native", "Healthcare", "Mobile App"],
-      "github": "https://github.com/singhdeepansh235-cloud",
+      "tags": [
+        "React Native",
+        "Healthcare",
+        "Mobile App"
+      ],
+      "github": "https://life-link-sandy.vercel.app",
       "featured": true
     }
   ],
@@ -53,14 +96,22 @@
       "board": "CBSE | English Medium",
       "year": "2025",
       "score": "62",
-      "achievements": ["NCC Group Captain"]
+      "achievements": [
+        "NCC Group Captain"
+      ]
     }
   ],
   "certifications": [
     {
       "title": "Certificate of Participation in Ideation Phase of Hacksagon 2026",
       "issuer": "Hacksagon",
-      "date": "March 2026 — Present",
+      "date": "March 2026",
+      "highlight": "Top Performer in Web Development Track"
+    },
+    {
+      "title": "CodeRush 2.0",
+      "issuer": "Babu Banarasi Das Northern India Institute of Technology",
+      "date": "Apr 2026",
       "highlight": "Top Performer in Web Development Track"
     }
   ],
