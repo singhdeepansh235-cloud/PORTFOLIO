@@ -27,11 +27,12 @@
   <!-- ═══════════════ NAVIGATION ═══════════════ -->
   <nav class="navbar" id="navbar">
     <div class="nav-container">
-      <a href="#hero" class="nav-logo">DS<span>.</span></a>
+      <a href="#hero" class="nav-logo"><img src="/images/logo.png" alt="DS Logo" class="nav-logo-img"></a>
 
       <ul class="nav-links" id="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#education">Education</a></li>
         <li><a href="#certifications">Certifications</a></li>
@@ -50,26 +51,41 @@
   <section class="hero" id="hero">
     <canvas id="particles-canvas"></canvas>
 
-    <div class="hero-content">
-      <p class="hero-greeting">Hello, I'm</p>
-      <h1 class="hero-name">
-        <span class="name-highlight">Deepansh Singh</span>
-      </h1>
-      <p class="hero-tagline">
-        I'm a <span class="typed-text"></span><span class="cursor"></span>
-      </p>
-      <p class="hero-description">
-        Engineering student passionate about building practical solutions with modern technologies. Turning ideas into elegant, functional experiences.
-      </p>
-      <div class="hero-buttons">
-        <a href="#projects" class="btn btn-primary">
-          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
-          View Projects
-        </a>
-        <a href="#contact" class="btn btn-secondary">
-          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-          Contact Me
-        </a>
+    <div class="container hero-container">
+      <div class="hero-content">
+        <p class="hero-greeting">Hello, I'm</p>
+        <h1 class="hero-name">
+          <span class="name-highlight">Deepansh Singh</span>
+        </h1>
+        <p class="hero-tagline">
+          I'm a <span class="typed-text"></span><span class="cursor"></span>
+        </p>
+        <p class="hero-description">
+          Engineering student passionate about building practical solutions with modern technologies. Turning ideas into elegant, functional experiences.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+            View Projects
+          </a>
+          <a href="/resume.pdf" class="btn btn-secondary" download>
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download Resume
+          </a>
+          <a href="#contact" class="btn btn-tertiary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            Contact Me
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-image-wrapper">
+        <div class="hero-image-glow"></div>
+        <div class="hero-image-border">
+          <div class="hero-image">
+            <img src="/images/profile.jpeg" alt="Deepansh Singh — Web Developer">
+          </div>
+        </div>
       </div>
     </div>
 
@@ -95,6 +111,12 @@
           <p class="about-desc">
             I'm Deepansh Singh, an engineering student from Bahraich, Uttar Pradesh, with a strong passion for technology and software development. I specialize in web development, React Native, and SQL — constantly improving my craft through hands-on projects like Sentinel Fuzz and Life Link. As an NCC Group Captain, I've developed strong leadership and organisational skills that complement my technical abilities. I'm always eager to learn, build, and create user-focused applications that make a real impact.
           </p>
+          <div class="about-cta">
+            <a href="/resume.pdf" class="btn btn-primary" download>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              Download Resume / CV
+            </a>
+          </div>
           <div class="about-stats">
             <div class="stat-card reveal stagger-1">
               <div class="stat-number" data-count="2">0</div>
@@ -196,6 +218,35 @@
               </div>
               <span class="skill-name">Administrative Experience</span>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ EXPERIENCE ═══════════════ -->
+  <section class="section" id="experience">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">Experience</div>
+        <h2 class="section-title">Leadership & Activities</h2>
+        <p class="section-subtitle">Showcasing capability in responsibility, management, and team leadership.</p>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-year">2024 - 2025</div>
+            <h3 class="timeline-title">NCC Group Captain</h3>
+            <p class="timeline-institution">National Cadet Corps | Oxford Public School</p>
+            <p class="timeline-details">Commanded cadet operations, directed parade drills, and drove discipline and teamwork.</p>
+            <ul class="timeline-list">
+              <li>Commanded a squad of over 50 cadets during ceremonial drills and school parades.</li>
+              <li>Orchestrated logistics and event management for national festivals and campus drives.</li>
+              <li>Fostered leadership values, self-discipline, and community service initiatives among peers.</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -423,9 +474,12 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-content">
-        <p class="footer-text">
-          &copy; 2026 <span>Deepansh Singh</span>. All rights reserved.
-        </p>
+        <div class="footer-brand">
+          <a href="#hero" class="footer-logo"><img src="/images/logo.png" alt="DS Logo" class="footer-logo-img"></a>
+          <p class="footer-text">
+            &copy; 2026 <span>Deepansh Singh</span>. All rights reserved.
+          </p>
+        </div>
         <div class="footer-links">
           <a href="https://www.linkedin.com/in/deepansh-singh-559598379/" target="_blank" rel="noopener">LinkedIn</a>
           <a href="https://github.com/singhdeepansh235-cloud" target="_blank" rel="noopener">GitHub</a>

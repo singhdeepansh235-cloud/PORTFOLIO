@@ -17,7 +17,9 @@
   "dependencies": {
     "@tailwindcss/vite": "^4.3.1",
     "cors": "^2.8.5",
+    "dotenv": "^17.4.2",
     "express": "^4.21.0",
+    "nodemailer": "^9.0.1",
     "tailwindcss": "^4.3.1"
   }
 }

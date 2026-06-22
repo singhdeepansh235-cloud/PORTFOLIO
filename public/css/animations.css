@@ -26,6 +26,19 @@
   50% { transform: translateY(-6px); }
 }
 
+/* ─── Gentle Float (Hero Image) ─────────────────────────── */
+@keyframes gentleFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+
+/* ─── Rotate Gradient (Profile Image Ring) ──────────────── */
+@keyframes rotateGradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
 /* ─── Spin (for loading) ────────────────────────────────── */
 @keyframes spin {
   to { transform: rotate(360deg); }

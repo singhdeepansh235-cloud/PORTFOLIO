@@ -240,8 +240,19 @@ function initContactForm() {
 
       if (data.success) {
         statusEl.className = 'form-status success';
-        statusEl.textContent = data.message;
+        statusEl.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: text-bottom; margin-right: 8px; color: #10b981;"><polyline points="20 6 9 17 4 12"/></svg> ${data.message}`;
         form.reset();
+
+        // Show success state on the button
+        submitBtn.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px; vertical-align: text-bottom;"><polyline points="20 6 9 17 4 12"/></svg> Sent!';
+        submitBtn.style.background = 'linear-gradient(135deg, #10b981 0%, #059669 100%)';
+        submitBtn.style.color = '#ffffff';
+
+        setTimeout(() => {
+          submitBtn.innerHTML = originalText;
+          submitBtn.style.background = '';
+          submitBtn.style.color = '';
+        }, 4000);
       } else {
         statusEl.className = 'form-status error';
         statusEl.textContent = data.error || 'Something went wrong.';
@@ -250,8 +261,15 @@ function initContactForm() {
       statusEl.className = 'form-status error';
       statusEl.textContent = 'Network error. Please try again later.';
     } finally {
-      submitBtn.disabled = false;
-      submitBtn.innerHTML = originalText;
+      // Re-enable after delay if successful, otherwise immediately
+      if (statusEl.classList.contains('success')) {
+        setTimeout(() => {
+          submitBtn.disabled = false;
+        }, 4000);
+      } else {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = originalText;
+      }
     }
   });
 }
