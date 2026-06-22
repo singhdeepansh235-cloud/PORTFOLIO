@@ -233,16 +233,20 @@ a {
 }
 
 .nav-logo {
-  font-family: var(--font-heading);
-  font-size: 1.5rem;
-  font-weight: 800;
-  color: var(--text-accent);
-  letter-spacing: -0.03em;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
 }
 
-.nav-logo span {
-  color: var(--text-tertiary);
-  font-weight: 400;
+.nav-logo-img {
+  height: 32px;
+  width: auto;
+  object-fit: contain;
+  transition: transform var(--transition-fast);
+}
+
+.nav-logo-img:hover {
+  transform: scale(1.05);
 }
 
 .nav-links {
@@ -1371,6 +1375,32 @@ a {
   justify-content: space-between;
 }
 
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.footer-logo-img {
+  height: 28px;
+  width: auto;
+  object-fit: contain;
+  opacity: 0.75;
+  transition: opacity var(--transition-fast) ease, transform var(--transition-fast) ease;
+}
+
+.footer-logo-img:hover {
+  opacity: 1;
+  transform: translateY(-2px);
+}
+
 .footer-text {
   font-size: 0.85rem;
   color: var(--text-tertiary);
@@ -1482,6 +1512,10 @@ a {
     flex-direction: column;
     gap: 16px;
     text-align: center;
+  }
+
+  .footer-brand {
+    align-items: center;
   }
 }
 
